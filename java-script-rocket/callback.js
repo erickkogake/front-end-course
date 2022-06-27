@@ -2,8 +2,13 @@
 
 function imprimeDado(dado) {
   console.log(dado)
+  console.log(dado())
 }
 
 imprimeDado(1)
 imprimeDado('Olá mundo')
 imprimeDado(true)
+
+imprimeDado(function () {
+  return 'Olá mundo'
+})
