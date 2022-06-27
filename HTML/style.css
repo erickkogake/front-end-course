@@ -1,0 +1,175 @@
+header {
+    background: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.navegacao {
+    text-transform: uppercase;
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    margin-left: 15px; 
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #C78C19
+}
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing:border-box;
+    border-color: #000000;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px 40px;
+    /* Podemos utilizar o border numa única vez, ao invés de escrever color, width...
+    Ex: border: 2px solid #000000; */
+} 
+
+.produtos li:hover {
+    color: #c79c19;
+    border-color: #c79c19;
+}
+
+.produtos li:hover h2 {
+    font-size: 34px;
+}
+
+.produtos li:active{
+    color: green;
+    border-color: green;
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao {
+    font-size: 18px;
+}
+.preco {
+    font-weight: bold;
+    font-size: 22px;
+    margin: 15px 0 0;
+}
+
+.horario {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+}
+
+footer {
+    background: url("bg.jpg");
+    text-align: center;
+    padding: 30px 0;
+}
+
+.copyright {
+    color: white;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
+
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    font-size:18px
+}
+
+form label {
+    display:block;
+    margin: 10px 0 0;
+    font-size: 18px;
+}
+
+textarea {
+    margin:10px 0 2px 0;
+    width: 54%;
+}
+
+.caracteres {
+    font-size: 12px;
+    margin: 0 0 20px 0;
+}
+
+.input-padrao {
+    display: block;
+    margin: 10px 0 20px 0;
+    width: 50%;
+    padding: 10px 20px 0;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.input-submit {
+    margin: 0 0 20px 0;
+    width:30%;
+    font-size:20px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0;
+    transition: 2s all; /* comando utlizado para dar um tempo a efeito dado em um elemento. */  
+    cursor: pointer; /* esse comando é utlizado para mudar o cursor de seta, para mão. */
+}
+
+.input-submit:hover {
+    background:darkorange;
+    text-decoration: underline;
+    transform: scale(1.2);
+}
+
+table {
+    text-align:center;
+    margin: 0 0 20px 0;
+    
+}
+
+thead {
+    font-weight: bold;
+    background: #555555;
+    color:white;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px 10px;
+}

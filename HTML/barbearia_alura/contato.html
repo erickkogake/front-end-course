@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Barbearia Alura - Contato</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<header>
+    <div class="caixa">
+        <h1><img src="logo.png" alt="Logo da Barbearia"></h1>
+
+        <nav>
+            <ul class="navegacao">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<body>
+    <main>
+        <form>
+            <label for="nomecompleto">Nome completo</label> <!-- <label> seria uma etiqueta para o input-->
+            <input type="text" id="nomecompleto" class="input-padrao" required placeholder="Ex: Erick Kogake Gardino">
+            <!-- "O placeholder", é uma sugestão de mensagem para o usuário.-->
+
+            <label for="email">Email</label>
+            <input type="email" id="email" class="input-padrao" required placeholder="alura.2019@gmail.com">
+            <!--O required, seria um verificador, se o campo onde está adicionado o required não for preenchido, não avança a page.-->
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+            <label>Mensagem</label>
+            <textarea cols="67" rows="10" required></textarea>
+            <p class="caracteres">Essa caixa de mensagem aceita até 600 caracteres</p>
+
+            <fieldset>
+                <!--A tag fieldset, é utilizada para agrupar elementos.-->
+                <legend>Como gostaria de receber nosso contato?</legend>
+                <!-- todo "parágrafo" da tag fieldset, não se demonina com a tag <p> e sim pela <legend>-->
+                <label><input type="radio" name="contato" value="email" id="contatos">Email</label>
+
+                <label><input type="radio" name="contato" value="telefone" id="contatos">Telefone</label>
+
+                <label><input type="radio" name="contato" value="whatsapp" id="contatos" checked>Whatsapp</label>
+                <!--"O checked", é utilizado para fixar uma marcação para o usuário como sugestão, mas podendo mudar para outras opções.-->
+
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Qual horário prefere ser atendido?</legend>
+                <select>
+                    <!--"O Select ou Drop-down", seria um campo de seleção de um item, e em seguida damos as opções com a Tag options.-->
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+
+                <label for="check-email" class="checkbox"><input type="checkbox" id="check-email" checked>Gostaria de
+                    receber nossas novidades por email?</label>
+                <input type="submit" value="Enviar" class="input-submit">
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <img src="logo-branco.png" alt="Logo da Barbearia">
+        <p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
+    </footer>
+</body>
+
+</html>
