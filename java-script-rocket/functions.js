@@ -39,3 +39,25 @@ sum1(34,25)
 
 console.log(number1*number2)
 console.log(sum1(34,25))
+
+//function scope
+
+// let subject
+
+// function creatThink(subject) {
+//   return subject
+// }
+
+// console.log(creatThink(subject))
+
+let subject = 'hoje cai salario'
+
+function creatThink(subject) {
+  subject = 'hoje nao cai'
+  return subject
+}
+
+console.log(subject)
+console.log(creatThink(subject))
+console.log(subject)
+
