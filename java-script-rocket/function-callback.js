@@ -12,8 +12,42 @@ const person = {
 
 
 
-const listNames = () => {
-   return person.hobbys 
+// const listNames = (person) => {
+//    return person.hobbys 
+// }
+
+// console.log(listNames())
+
+function Person(name) {
+  this.name = name
+  this.walk = function() {
+    return this.name + ' está andando'
+  } 
 }
 
-console.log(listNames())
+const mayk = new Person('Mayk');
+
+console.log(mayk.walk())
+
+//quantos caracteres tem um palavra, e quantos numeros tem uma conta
+
+let nome = "paulinho"
+console.log(nome.length)
+
+let ano = 2022
+console.log(String(ano).length)
+
+//transformar um número com 2 casas decimais e trocar ponto por vírgula
+
+let salario = 3556.5546
+console.log(salario.toFixed(2).replace('.' , ','))
+
+console.log(nome.replace('a' , '@'))
+
+//Manipulando strings 
+
+//procurando a palavra homem na frase
+
+let phrase = 'Eu sou um grande homem'
+console.log(phrase.includes('homem')) //retorna um boolean
+console.log(phrase.includes('ums'))
