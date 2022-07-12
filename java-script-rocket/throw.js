@@ -19,7 +19,7 @@ try {
 
 console.log('próximo nome')
 
-function materialEscolar(m = 'caderno') {
+function materialEscolar(m) {
   if(m === 'caneta') {
     throw 'Material escolar obrigatório'
   } else {
@@ -29,6 +29,6 @@ function materialEscolar(m = 'caderno') {
 
 try {
   materialEscolar('caneta')
-  } catch (e) {
+  } catch (e){
     console.log(e)
 }
